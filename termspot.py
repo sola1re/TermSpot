@@ -1,3 +1,8 @@
+######################
+# Created By Kazulhu #
+#    2022 - 2023     #
+######################
+
 import os
 import discord
 import asyncio
