@@ -1,2 +1,2 @@
 # TermSpot
-Browser extension which scans terms and conditions to recognize fishy stuff 🐟
+A wonderful discord bot able to correct your grammar mistakes. You can learn and grow 🏗️
