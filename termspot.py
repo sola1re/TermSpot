@@ -59,6 +59,8 @@ def text_correction(text):
         corrected_list = corrected_text.split(' ')
         for i in range(len(corrected_list)):
             corrected_text = tool.correct(corrected_text)
+        if corrected_text==None:
+            return text
         return corrected_text
 
 def mistakes(text):
@@ -106,8 +108,8 @@ async def help_command(ctx: commands.Context):
     embed.add_field(name="/exp <insert text>", value="Envoie les erreurs commises dans ton message", inline=True)
     embed.add_field(name="/stats", value="Envoie le nombre d'erreurs corrigées par le bot depuis qu'il est en ligne", inline=True)
     embed.add_field(name="/help", value="Tu viens d'utiliser cette commande", inline=True)
-    embed.set_author(name="TermSpot", icon_url="https://i.imgur.com/obQVXHO.jpg")
-    embed.set_thumbnail(url="https://i.imgur.com/obQVXHO.jpg")
+    embed.set_author(name="TermSpot", icon_url="https://imgur.com/iVSj45a.png")
+    embed.set_thumbnail(url="https://imgur.com/iVSj45a.png")
     await ctx.respond(embed=embed)
 
 client.run('token')
