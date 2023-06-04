@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JavaScript/style.js"></script>
+  <title>Termspot - Contact</title>
+  <link rel="icon" type="image/x-icon" href="/img/icon.png">
+</head>
+<body>
+<nav>
+  <ul>
+    <li class="logo"><img src="/img/Logo.png" alt="" class="menu_logo"></li>
+    <li><a href="accueil.html">Accueil</a></li>
+    <li class="dropdown">
+      <a href="#">Menu</a>
+      <ul class="dropdown-content">
+        <li><a href="informations.html">Fonctionnalités</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </li>
+    <li class="dropdown" id="lang">
+      <a href="#">Langue</a>
+      <ul class="dropdown-content">
+        <li class="lang-fr"><a href="contact.html">Français</a></li>
+        <li class="lang-en"><a href="contact_en.html">English</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<section class="homepage_body">
+  <h1 class="contact_h1">Un problème ? Vous êtes au bon endroit !</h1>
+  <form>
+    <fieldset>
+      <legend>Nous Contacter</legend>
+
+      <label>
+        Pseudo Discord
+        <input type="text" value="John#0001" id="pseudo" name="pseudo">
+      </label>
+      <br>
+      <label>
+        Adresse mail
+        <input type="text" value="john.smith@youhou.com" id="mail" name="mail">
+      </label>
+      <br>
+      <label>
+        Problème rencontré
+        <input type="text" maxlength="1000">
+      </label>
+      <br>
+      <button type="submit" onclick="sendEmail()">Envoyer</button>
+    </fieldset>
+  </form>
+  <br>
+</section>
+
+<footer>
+  <div class="footer">
+    <ul>
+      <li><a href="accueil.html">Accueil</a></li>
+      <li><a href="informations.html">Fonctionnalités</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

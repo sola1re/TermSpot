@@ -1,0 +1,405 @@
+/* Style of the Header */
+.menu_logo {
+    height: 2.3vw;
+}
+
+nav {
+    height: 5vw;
+    font-size: 2.3vw;
+    background-color: #222222;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dropdown li:last-child {
+    margin-left: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10%;
+    width: fit-content;
+    padding: 0.8vw;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* When hovered, the menu displays a gray rectangle*/
+nav ul li:hover {
+    background-color: gray;
+}
+
+/* But we don't want the logo to do so. So we add : */
+.logo:hover {background-color: #222222;}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Masquer le contenu du menu déroulant par défaut */
+.dropdown-content {
+    display: none;
+    z-index: 3;
+    background-color: #222222;
+}
+
+/* Afficher le contenu du menu déroulant lorsqu'on survole le menu */
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 3vw; /* Places the box displayed at 3vw of the top of the page */
+    left: 0; /* Aligns the box displayed with the Menu button */
+}
+
+/* We want to align the dropping down menu on the left */
+.dropdown-content li {
+    text-align: left;
+}
+
+/* We want to make sure that when hovering on "À propos", a gray rectangle is displayed on all the width of the dropdown block */
+.dropdown-content li:hover  {
+    width: 90%;
+}
+
+#lang {
+    margin-left: 120%;
+}
+
+#lang li:hover {
+    width: 84%;
+}
+
+#lang-en {
+    margin-left: 120%;
+}
+
+#lang-en li:hover {
+    width: 85%;
+}
+
+.dropdown-content a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/*-----------------*/
+
+
+/* Style of the download part */
+
+/* Style of the download button */
+.download_btn {
+    /* General style */
+    font-size: 95%;
+    font-family: Arial;
+    color: white;
+    text-decoration: none;
+    background-color: #7289da;
+
+    /* Padding and spaces */
+    padding-left: 4%;
+    padding-right: 4.3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    column-gap: 3%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* Border */
+    box-shadow: 0 2px #999;
+    border: none;
+    border-radius: 1.5vw;
+}
+
+.download_btn:hover {background-color: #7278da;}
+
+.download_btn:active {
+    background-color: #7278da;
+    box-shadow: 0 5px #666;
+    /* transform: translateY(3px); */
+}
+
+.download_btn img {height: 2.3vw;}
+/*-----------------------------*/
+
+#txt_en {
+    width: 40%;
+}
+
+
+
+.download {
+    /* General style */
+    color: white;
+    font-size: 2.5vw;
+    width: 35%;
+    height: 45%;
+
+    /* Position */
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-10%, -50%);
+
+    /* Alignment */
+    text-align: right;
+    flex: 1;
+
+    /* Displaying parameters */
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.download_bg {
+    width: 100%;
+    height: auto;
+
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.download_img {
+    height: 2.5vw;
+    width: auto;
+}
+
+.download_section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+/*-----------------------------*/
+
+:root {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+}
+
+/* Style of the table */
+table {
+    color: #555555;
+    width: 100%;
+    box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12) !important;
+    overflow: auto;
+}
+
+caption{
+    color: #00238b;
+    padding: 2%;
+    font-family: "Courier New", serif;
+    font-size: 2vw;
+}
+
+table, caption {
+    background-color: ghostwhite;
+    border-radius: 10px;
+}
+
+table td, table th {
+    text-align: center;
+    padding: 7px;
+}
+
+table td {
+    text-align: left;
+    font-family: "Courier New", serif;
+    font-size: 1.5vw;
+    background-color: #edf1ff;
+}
+
+table th {
+    color: black;
+    font-family: "Courier New", serif;
+    font-size: 1.3vw;
+    background-color: #c5d5ff;
+}
+
+table tr td:first-child {
+    color: #00238b;
+    font-family: "Courier New", serif;
+    font-size: 1.3vw;
+    background-color: #d9e3ff;
+}
+
+table tr:not(:last-child) td:first-child, table th {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+/*--------------------*/
+/**/
+
+
+
+.homepage_body {
+    margin: 10%;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+form {
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.contact_h1 {
+    text-align: center;
+    font-size: 4.3vw;
+}
+
+legend {
+    font-size: 4vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+.about {
+    font-size: 2vw;
+}
+
+label {
+    font-size: 3vw;
+}
+
+.join_serv {
+    /* General style */
+    text-decoration: none;
+    font-size: 1.5vw;
+    white-space: nowrap;/* Makes sure that the text takes only one line and is not divided into more lines */
+    color: white;
+    background-color: #7289da;
+    font-family: Arial;
+
+    /* Padding and spaces */
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    column-gap: 3%;
+    right: 0;
+    bottom: 0;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* Border */
+    box-shadow: 0 1px #999;
+    border: none;
+    border-radius: 2vw;
+}
+
+.join_serv:hover {background-color: #7278da;}
+
+.join_serv img {height: 2vw;}
+
+.git_btn {
+    /* General style */
+    text-decoration: none;
+    font-size: 1.5vw;
+    white-space: nowrap;
+    color: white;
+    background-color: #333;
+    font-family: Arial;
+
+    /* Padding and spaces */
+    padding-left: 2.3%;
+    padding-right: 2.3%;
+    padding-top: 1.3%;
+    padding-bottom: 1.3%;
+    column-gap: 3%;
+    right: 0;
+    bottom: 0;
+
+    /* Alignment */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* Border */
+    box-shadow: 0 1px #999;
+    border: none;
+    border-radius: 2vw;
+}
+
+.git_btn:hover {background-color: #555;}
+
+.git_btn img {height: 2vw;}
+
+.homepage_body_btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3%;
+}
+/**/
+
+footer {
+    background-color: #222222;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+footer li a{
+    text-decoration: none;
+    color: lightgray;
+    display: flex;
+    font-size: 2vw;
+}
+
+footer li {/**/
+    display: inline-block;
+    margin: 2vw;
+}
+
+footer ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
